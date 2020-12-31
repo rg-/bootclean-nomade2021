@@ -1,0 +1,59 @@
+/* mmasonry part */
+ul[data-mmasonry="products"]{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+[data-mmasonry]:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix { 
+  display: block;
+  clear: both;
+}
+
+[data-mmasonry="products"]{
+  margin-left: -($grid-gutter);
+  margin-right: -($grid-gutter);
+}
+
+[data-mmasonry] .mmasonry-item {  
+  float: left; 
+  @include class-breakpoint(100%, 50%, 50%, 33.3333333333%, 33.3333333333%, width );
+  &.col-by-6{
+      @include class-breakpoint(100%, 50%, 50%, 50%, 50%, width );
+    }
+
+    &.col-by-12{
+      @include class-breakpoint(100%, 100%, 100%, 100%, 100%, width );
+    }
+}
+
+.mmasonry-stamp,
+.mmasonry-sizer,
+.mmasonry-X{ 
+
+    /*
+    8.333333%   // col-1 #
+    16.666667%  // col-2 #
+    25%         // col-3
+    33.333333%  // col-4 #
+    41.666667%  // col-5
+    50%         // col-6
+    58.333333%  // col-7
+    66.666667%  // col-8
+    75%         // col-9
+    83.333333%  // col-10
+    91.666667%  // col-11
+    100%        // col-12
+    */
+
+    @include class-breakpoint(100%, 50%, 50%, 33.3333333333%, 33.3333333333%, width );
+    &.col-by-6{
+      @include class-breakpoint(100%, 50%, 50%, 50%, 50%, width );
+    }
+}  

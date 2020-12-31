@@ -1,0 +1,32 @@
+#main-page-header{
+ .slick-slide .item .item-container > .image-cover{
+ 	position: relative;
+ 	&:after{
+	 	content: "";
+	 	position: absolute;
+	 	top: 0;
+	 	left: 0;
+	 	right: 0;
+	 	bottom: 0;
+	 	z-index: 10;
+	 	display: block;
+	 	@include opacity(.10);
+	 	background-color: $primary;
+	 }
+ } 
+
+ .social-icons{
+ 	position:absolute;
+ 	padding:$grid-gutter*2 $grid-gutter;
+ 	bottom:0;
+ 	right: 0;
+ 	z-index: 100;
+ }
+
+ .slick-dots{
+	 	padding:$grid-gutter*2 $grid-gutter;
+	 	text-align: left; 
+	 	bottom:0;
+	 	width: auto;
+  }
+}

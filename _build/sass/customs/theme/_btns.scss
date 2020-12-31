@@ -1,0 +1,20 @@
+button, .btn, .dropdown-toggle, .bootstrap-select .dropdown-toggle{
+	@include box-shadow(none!important);
+	&:focus, &:active, &.active{
+		outline: none!important;
+		@include box-shadow(none!important);
+	}
+	
+}
+
+
+.btn{
+	padding: .782rem 1.5rem; 
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 300; 
+}
+
+.btn-search-submit{
+	padding:.5rem 1rem;
+}

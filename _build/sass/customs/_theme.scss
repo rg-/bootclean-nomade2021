@@ -1,0 +1,90 @@
+html,body {
+	height:100%; 
+}
+
+.ajax-load-holder{
+	&.ajax-loading{
+		width: auto!important;
+		&:after{
+			float: none!important;
+			background-image: none!important;
+		}
+	}  
+}
+
+.screen-reader-text{
+	display: none!important; 
+}
+
+
+.container{
+	@include breakpoint-max(lg){
+		max-width:100%;
+	}
+}
+
+.content-wrap{ 
+	img{
+		max-width:100%;
+		height:auto;
+	}
+}
+
+[class^="n-icon-"], [class*=" n-icon-"]{
+	font-size: 20px;
+	&.xs{
+		font-size: 14px;
+	}
+	&.sm{
+		font-size: 16px;
+	}
+	&.lg{
+		font-size: 28px;
+	}
+	&.xl{
+		font-size: 44px;
+	}
+
+	&.n-icon-logo-nomade{
+		font-size: 44px;
+	}
+}
+
+.wpbc-full-aside-cols{
+	.col-fullside{ 
+	}
+}
+
+.embed-responsive-custom{
+	position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+	&::before {
+	  padding-top: 115%;
+	  display: block;
+    content: "";
+	}
+	.embed-responsive-item{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+}
+
+
+ 
+
+@import "theme/typo";
+@import "theme/btns";
+@import "theme/forms";
+@import "theme/slick";
+@import "theme/main-navbar";
+@import "theme/main-pageheader";
+@import "theme/mmasonry";
+@import "theme/ui-project-item";

@@ -1,0 +1,21 @@
+//
+// Color system
+//
+
+$body-bg:                   #ffffff !default; 
+$body-color:                #585858 !default;
+$primary: #714d3e !default;
+$secondary: #ac8a6e !default; 
+$light: #f3f1ed !default;  
+$body-light:                   #f7f7f5 !default; 
+$lighter: #e2ded3 !default;  
+$black: #000!default; 
+$white: #fff!default; 
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "black":    $black,
+  "white":    $white,
+  "lighter": $lighter,
+  "body": $body-color,
+  "body-light": $body-light
+), $theme-colors); 
